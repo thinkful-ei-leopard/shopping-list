@@ -20,4 +20,12 @@ $('#js-shopping-list-form').submit(function(event){
   </div>
 </li>`;
   $('.shopping-list').append(addToList);
-})
+});
+
+$('.shopping-item-toggle').on('click', event => {
+  $(event.target).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
+});
+
+
+
+
